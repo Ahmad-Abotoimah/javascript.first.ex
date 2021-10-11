@@ -270,33 +270,26 @@ function shorterString(x,y,z,a,d) {
   r=z.length
   t=a.length
   u=d.length
-  i=0;
-  if(w<e<r<t<u){
-  i=x;
-  } 
-  else{
-  i=y
-  }
-  if(e<w<r<t<u){
-    i=y
+  if (w<e && w<r && w<t && w<u)
+{
+    console.log(x);
 }
-else{
-  i=z
+else if (e<w && e<r && e<t && e<u)
+{
+    console.log(y);
 }
-if(r<w<e<t<u){
-  i=z
+else if (r<w && r<e && r<t && r<u)
+{
+    console.log(z);
 }
-else{
-i=a
+else if (t<w && t<e && t<r && t<u)
+{
+    console.log(a);
 }
-if(t<w<e<r<u){
-  i=a
+else
+{
+    console.log(d);
 }
-else{
-i=d
-}
-
-console.log(' '+i);
 }
 shorterString('ahmad','ali','obada','seed','ali')
 /*
@@ -320,32 +313,26 @@ function longerString(x,y,z,a,d) {
   t=a.length
   u=d.length
   i=0;
-  if(w>e>r>t>u){
-  i=x;
-  } 
-  else{
-  i=y
-  }
-  if(e>w>r>t>u){
-    i=y
+  if (w>e && w>r && w>t && w>u)
+{
+    console.log(x);
 }
-else{
-  i=z
+else if (e>w && e>r && e>t && e>u)
+{
+    console.log(y);
 }
-if(r>w>e>t>u){
-  i=z
+else if (r>w && r>e && r>t && r>u)
+{
+    console.log(z);
 }
-else{
-i=a
+else if (t>w && t>e && t>r && t>u)
+{
+    console.log(a);
 }
-if(t>w>e>r>u){
-  i=a
+else
+{
+    console.log(d);
 }
-else{
-i=d
-}
-
-console.log(' '+i);
 }
 longerString('ahmad','ali','obada','seed','ali')
 /*
@@ -516,15 +503,15 @@ Ex: scoreInUniversty(71)
 */
 function scoreInUniversty(x){
   let i = 0;
-  if((100>x>95))
-   { i="A"}
-  if((94>x>85))
+  if(x<100||x=100&&x=95||x>95){
+    i="A"}
+  else if(x<94||x=95&&x=84||x>84)
     {i="B"}
-  if((84>x>70))
+ else if(x<84||x=84&&x=70||x>70)
     {i="C"}
-  if((69>x>50))
+ else if(x<69||x=69&&x=50||x>50)
     {i="D"}
- if(49>x>0){
+ else (49>x>0){
     {i="F"}
 }
 console.log(' '+i)
