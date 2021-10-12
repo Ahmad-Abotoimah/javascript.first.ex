@@ -270,19 +270,19 @@ function shorterString(x,y,z,a,d) {
   r=z.length
   t=a.length
   u=d.length
-  if (w<e && w<r && w<t && w<u)
+  if (w<=e && w<=r && w<=t && w<=u)
 {
     console.log(x);
 }
-else if (e<w && e<r && e<t && e<u)
+else if (e<=w && e<=r && e<=t && e<=u)
 {
     console.log(y);
 }
-else if (r<w && r<e && r<t && r<u)
+else if (r<=w && r<=e && r<=t && r<=u)
 {
     console.log(z);
 }
-else if (t<w && t<e && t<r && t<u)
+else if (t<=w && t<=e && t<=r && t<=u)
 {
     console.log(a);
 }
@@ -313,19 +313,19 @@ function longerString(x,y,z,a,d) {
   t=a.length
   u=d.length
   i=0;
-  if (w>e && w>r && w>t && w>u)
+  if (w>=e && w>=r && w>=t && w>=u)
 {
     console.log(x);
 }
-else if (e>w && e>r && e>t && e>u)
+else if (e>=w && e>=r && e>=t && e>=u)
 {
     console.log(y);
 }
-else if (r>w && r>e && r>t && r>u)
+else if (r>=w && r>=e && r>=t && r>=u)
 {
     console.log(z);
 }
-else if (t>w && t>e && t>r && t>u)
+else if (t>=w && t>=e && t>=r && t>=u)
 {
     console.log(a);
 }
